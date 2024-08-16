@@ -1,31 +1,7 @@
-**Investlink backend
+Aqui está um exemplo de conteúdo para o arquivo `README.md` do seu projeto:
 
-Descrição das Pastas e Arquivos:
-InvestlinkApplication.java: Classe principal que contém o método main() para iniciar a aplicação Spring Boot.
-
-controller/: Contém os controladores REST, responsáveis por expor os endpoints da API.
-
-service/: Contém a lógica de negócios e orquestra chamadas para os repositórios.
-
-repository/: Contém as interfaces que estendem JpaRepository ou CrudRepository, responsáveis por interagir com o banco de dados.
-
-model/: Contém as classes de entidade que representam as tabelas do banco de dados, mapeadas usando Hibernate.
-
-dto/: Contém os Data Transfer Objects (DTOs) usados para transferir dados entre as camadas da aplicação.
-
-config/: Contém classes de configuração, como configurações de segurança, CORS, ou configurações específicas do Hibernate.
-
-application.properties: Arquivo de configuração onde você define parâmetros como conexão com o banco de dados, configuração de portas, entre outros.
-
-Dockerfile: Define como a imagem Docker da aplicação será construída.
-
-docker-compose.yml: Utilizado para orquestrar múltiplos containers, como o backend, banco de dados, etc.
-
-test/: Contém os testes unitários organizados de forma semelhante à estrutura principal.
-
-pom.xml: Arquivo Maven que gerencia as dependências do projeto.
-
-**# Investlink Backend
+```markdown
+# Investlink Backend
 
 ## Descrição
 
@@ -45,3 +21,111 @@ Este é o backend do projeto **Investlink**, reescrito em Java utilizando o fram
 
 O projeto está organizado da seguinte forma:
 
+```
+investlink-backend/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── investlink/
+│   │   │           ├── controller/          # Controladores REST
+│   │   │           ├── service/              # Lógica de negócio
+│   │   │           ├── repository/           # Interação com o banco de dados
+│   │   │           ├── model/                # Entidades JPA
+│   │   │           ├── dto/                  # Data Transfer Objects
+│   │   │           └── config/               # Configurações adicionais
+│   │   │
+│   │   ├── resources/
+│   │   │   ├── application.properties        # Configurações da aplicação
+│   │   │   └── static/                       # Arquivos estáticos
+│   │   │
+│   │   └── docker/
+│   │       ├── Dockerfile                    # Dockerfile para build da imagem
+│   │       └── docker-compose.yml            # Docker Compose
+│   │
+│   └── test/                                 # Testes unitários
+│       └── java/
+│           └── com/
+│               └── investlink/
+│
+├── .gitignore                                # Arquivos e pastas a serem ignorados pelo Git
+├── pom.xml                                   # Arquivo Maven para gerenciamento de dependências
+├── README.md                                 # Descrição do projeto
+└── mvnw, mvnw.cmd                            # Scripts do Maven Wrapper
+```
+
+## Como Executar
+
+### Pré-requisitos
+
+- **Java 17** ou superior
+- **Maven 3.8+**
+- **Docker** (opcional, para executar a aplicação em containers)
+
+### Passos para Execução
+
+1. **Clonar o repositório**:
+   ```bash
+   git clone https://github.com/seu-usuario/investlink-backend.git
+   cd investlink-backend
+   ```
+
+2. **Build do projeto**:
+   ```bash
+   ./mvnw clean install
+   ```
+
+3. **Executar a aplicação**:
+   ```bash
+   ./mvnw spring-boot:run
+   ```
+
+4. **Executar a aplicação com Docker**:
+   ```bash
+   docker build -t investlink-backend .
+   docker run -p 8080:8080 investlink-backend
+   ```
+
+### Endpoints Disponíveis
+
+Os principais endpoints disponíveis são:
+
+- **GET /api/v1/stocks**: Retorna a lista de ações disponíveis.
+- **POST /api/v1/stocks**: Adiciona uma nova ação.
+- **GET /api/v1/stocks/{id}**: Retorna detalhes de uma ação específica.
+- **PUT /api/v1/stocks/{id}**: Atualiza os detalhes de uma ação.
+- **DELETE /api/v1/stocks/{id}**: Remove uma ação.
+
+## Testes
+
+Para executar os testes unitários, use o seguinte comando:
+
+```bash
+./mvnw test
+```
+
+## Contribuição
+
+Se desejar contribuir para este projeto:
+
+1. Faça um fork do repositório.
+2. Crie uma branch com a sua feature (`git checkout -b feature/sua-feature`).
+3. Faça o commit das suas alterações (`git commit -am 'Adiciona nova feature'`).
+4. Faça o push para a branch (`git push origin feature/sua-feature`).
+5. Crie um novo Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Contato
+
+Para mais informações ou dúvidas, entre em contato pelo email: [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
+```
+
+### Instruções:
+- Substitua `"seu-usuario"` e `"seu-email@exemplo.com"` com seus dados.
+- Customize o texto conforme necessário, especialmente na seção "Endpoints Disponíveis", que pode variar conforme as funcionalidades do seu projeto.
+
+Este `README.md` deve fornecer uma boa introdução e guia de uso para quem quiser entender ou contribuir com o projeto.
