@@ -64,7 +64,7 @@ investlink-backend/
 
 1. **Clonar o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/investlink-backend.git
+   git clone https://github.com/jeffev/investlink_backend_java.git
    cd investlink-backend
    ```
 
