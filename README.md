@@ -1,4 +1,4 @@
-Investlink backend
+**Investlink backend
 
 Descrição das Pastas e Arquivos:
 InvestlinkApplication.java: Classe principal que contém o método main() para iniciar a aplicação Spring Boot.
@@ -24,4 +24,24 @@ docker-compose.yml: Utilizado para orquestrar múltiplos containers, como o back
 test/: Contém os testes unitários organizados de forma semelhante à estrutura principal.
 
 pom.xml: Arquivo Maven que gerencia as dependências do projeto.
+
+**# Investlink Backend
+
+## Descrição
+
+Este é o backend do projeto **Investlink**, reescrito em Java utilizando o framework **Spring Boot**. O objetivo deste backend é fornecer uma API REST robusta e escalável para gerenciar informações sobre ações e FIIs (Fundos de Investimento Imobiliário) da bolsa de valores. 
+
+## Tecnologias Utilizadas
+
+- **Java 17**: Linguagem principal utilizada no desenvolvimento.
+- **Spring Boot**: Framework para facilitar a configuração e o desenvolvimento do backend.
+- **Hibernate**: Framework ORM para mapeamento de entidades e interação com o banco de dados.
+- **Spring Data JPA**: Para operações simplificadas de banco de dados.
+- **JUnit**: Para testes unitários.
+- **Mockito**: Para mockar dependências nos testes.
+- **Docker**: Para conteinerização da aplicação.
+
+## Estrutura do Projeto
+
+O projeto está organizado da seguinte forma:
 
