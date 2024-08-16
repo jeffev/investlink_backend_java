@@ -1,6 +1,3 @@
-Aqui está um exemplo de conteúdo para o arquivo `README.md` do seu projeto:
-
-```markdown
 # Investlink Backend
 
 ## Descrição
@@ -121,11 +118,4 @@ Este projeto está licenciado sob os termos da licença MIT. Veja o arquivo [LIC
 
 ## Contato
 
-Para mais informações ou dúvidas, entre em contato pelo email: [seu-email@exemplo.com](mailto:seu-email@exemplo.com).
-```
-
-### Instruções:
-- Substitua `"seu-usuario"` e `"seu-email@exemplo.com"` com seus dados.
-- Customize o texto conforme necessário, especialmente na seção "Endpoints Disponíveis", que pode variar conforme as funcionalidades do seu projeto.
-
-Este `README.md` deve fornecer uma boa introdução e guia de uso para quem quiser entender ou contribuir com o projeto.
+Para mais informações ou dúvidas, entre em contato pelo email: [jeffev123@gmail.com](mailto:jeffev123@gmail.com).
